@@ -1,0 +1,28 @@
+{
+  "name": "basic-counter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^15.5.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config ./webpack.config.js --entry ./index.jsx &",
+    "stop": "if [ $(fuser 8080/tcp) ]; then fuser -k 8080/tcp; fi"
+  },
+  "author": "Alex Pearson",
+  "license": "MIT"
+}
